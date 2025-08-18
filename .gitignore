@@ -1,0 +1,19 @@
+# Python cache/junk
+__pycache__/
+*.pyc
+
+# Environment
+.env
+*.env
+
+# Data files (only keep original dataset)
+data/*.csv
+!data/Superstore.csv
+
+# Virtual environments
+venv/
+
+# IDE/OS junk
+.idea/
+.vscode/
+.DS_Store
