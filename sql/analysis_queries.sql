@@ -1,5 +1,4 @@
 -- SUPERSTORE ANALYSIS QUERIES
--- Database: python_db
 -- Table: superstore
 
 -- 1. View full dataset
@@ -44,7 +43,7 @@ FROM superstore
 GROUP BY `Ship Mode`
 ORDER BY profit_margin_pct DESC;
 
--- 8. (Extra) Monthly sales trend
+-- 8.Monthly sales trend
 SELECT DATE_FORMAT(`Order Date`, '%Y-%m') AS order_month,
        SUM(Sales) AS monthly_sales
 FROM superstore
